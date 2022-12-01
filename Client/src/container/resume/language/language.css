@@ -1,0 +1,90 @@
+
+.languageList {
+    text-align: left;
+    margin-top: 40px;
+    position: relative;
+    margin-left: -35px;
+}
+.languageList:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 5px;
+    height: 5px;
+    background: #00C8AA;
+    border: 1px solid #00C8AA;
+    border-radius: 50%;
+    z-index: 2;
+}
+.languageListItem {
+    font-size: 13px;
+    list-style: none;
+}
+
+.languageItem p{
+    display: flex;
+    margin-top: -5px;
+    font-size: 13px;
+    margin-bottom: -25px;
+}
+.languageItem p span {
+    width: 120px;
+}
+.box {
+    height: 5px;
+    width: 200px;
+    border: 1px solid #555;
+    margin-left: 10px;
+    margin-top: 5px;
+    position: relative;
+    border: 1px solid #00C8AA;
+}
+
+.box div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #00C8AA;
+}
+
+.icons {
+    display: none;
+}
+
+.deleteIcon {
+    color: red;
+    margin-right: 10px;
+}
+.editIcon {
+    color: green;
+}
+
+.languageListItem:hover  .icons {
+    display: flex;
+    justify-content: right;
+    align-items:center;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+@media (max-width: 600px){
+    .languageListItem {
+        font-size: 11px;
+    }
+    .languageItem p {
+        font-size: 11px;
+    }
+    .languageItem p span {
+        width: 80px;
+    }
+    .box {
+        width: 100px;
+    }
+    .languageListItem:hover  .icons {
+        margin-left: 10px;
+    }
+}
+
+

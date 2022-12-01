@@ -1,0 +1,72 @@
+
+
+.experienceList {
+    text-align: left;
+    margin-top: 40px;
+    position: relative;
+    margin-left: -35px;
+}
+.experienceList:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 5px;
+    height: 5px;
+    background: #00C8AA;
+    border: 1px solid #00C8AA;
+    border-radius: 50%;
+    z-index: 2;
+}
+.experienceListItem {
+    font-size: 12px;
+    list-style: none;
+}
+.experienceItem h1 {
+    font-size: 13px;
+    margin-top: 20px;
+}
+.experienceItem h1 span {
+    font-size: 13px;
+    font-weight: 350;
+}
+.experienceItem p{
+    margin-top: -5px;
+    font-size: 13px;
+    margin-bottom: -25px;
+}
+
+
+.icons {
+    display: none;
+}
+
+.deleteIcon {
+    color: red;
+    margin-right: 10px;
+}
+.editIcon {
+    color: green;
+}
+
+.experienceListItem:hover  .icons {
+    display: flex;
+    justify-content: right;
+    align-items:center;
+    margin-left: 30px;
+    display: flex;
+    margin-top: -45px;
+    
+}
+
+@media (max-width: 600px){
+    .experienceListItem {
+        font-size: 11px;
+    }
+    .experienceItem h1 {
+        font-size: 11px;
+    }
+    .experienceItem h1 span {
+        font-size: 11px;
+    }
+}

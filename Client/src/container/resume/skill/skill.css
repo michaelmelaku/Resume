@@ -1,0 +1,43 @@
+.skillList {
+    font-weight: 550;
+    text-align: left;
+}
+
+.skillListItem {
+    font-size: 13px;
+    list-style: none;
+    display: flex;
+}
+
+.icons {
+    display: none;
+}
+
+.deleteIcon {
+    color: red;
+    margin-right: 10px;
+}
+.editIcon {
+    color: green;
+}
+
+.skillListItem:hover  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    display: flex;
+    margin-top: -10px;
+}
+
+.skillDivision {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 50px;
+}
+
+@media (max-width: 600px) {
+    .skillListItem {
+        font-size: 11px;
+    }
+}

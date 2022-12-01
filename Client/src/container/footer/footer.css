@@ -1,0 +1,22 @@
+.footer {
+    height: 50px;
+    background-color: #333;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        width: 600px;
+    }
+}

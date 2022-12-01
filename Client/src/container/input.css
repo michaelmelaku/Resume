@@ -1,0 +1,9 @@
+.input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.label {
+    font-family: 'Roboto', sans-serif;
+}

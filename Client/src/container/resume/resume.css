@@ -1,0 +1,228 @@
+.resumePage {
+    width: 700px;
+}
+.paper {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.resumeContainer {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.profilePart, .summaryPart, .skillPart, .workPart, .educationPart, .languagePart {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    position: relative;
+   
+}
+
+.educationPart, .languagePart {
+    margin-top: 20px;
+}
+
+.leftSide {
+    position: relative;
+}
+
+.profilePhoto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.rightSide {
+    margin-left: 20px;
+    margin-right: 20px;
+    float: right;
+}
+.leftSide:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    width: 3px;
+    height: 120%;
+    background: #f2f2f2;
+}
+
+.rightSide .name {
+    font-family: 'Roboto', sans-serif;
+    color: #00C8AA;
+    margin-top: 30px;
+    position: relative;
+    font-size: 24px;
+}
+
+.rightSide .name:before {
+    content: "";
+	position: absolute;
+	top: 12px;
+	left: -28px;
+	width: 10px;
+	height: 10px;
+	background: #00C8AA;
+	border: 1px solid #00C8AA;
+	border-radius: 50%;
+}
+.profileRightSide, .summaryRightSide {
+    display: flex;
+    
+}
+
+.profileIcon, .summaryIcon {
+    display: none;
+}
+
+.deleteIcon {
+    color: red;
+    margin-right: 10px;
+}
+.editIcon {
+    color: green;
+}
+
+.profileRightSide:hover  .profileIcon {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-left: 50px;
+    display: flex;
+    margin-top: 40px;
+}
+
+.summaryRightSide:hover  .summaryIcon {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-left: 50px;
+    display: flex;
+    margin-top: -60px;
+}
+
+
+.contactList {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+
+.contactList .icon {
+    font-size: 13px;
+    margin-right: 5px;
+    font-weight: 400;
+}
+.contactList .text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.summaryTitle {
+    font-size: 16px;
+    color: #00C8AA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 20px;
+    position: relative;
+}
+.summaryTitle:before {
+    content: "";
+	position: absolute;
+	top: 3px;
+	right: -24px;
+	width: 10px;
+	height: 10px;
+	background: #00C8AA;
+	border: 1px solid #00C8AA;
+	border-radius: 50%;
+    z-index: 2;
+}
+.rightSide .profession {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 16px;
+}
+
+.summaryDesc {
+    text-indent: 10px;
+    font-size: 13px;
+    margin-top: -5px;
+    text-align: justify;
+}
+
+.skills {
+    column-count: 2;
+    margin-top: 3px;
+    column-gap: 50px;
+}
+
+.editLink {
+    text-decoration: none;
+}
+
+@media (max-width: 1200px){
+    .resumePage {
+        width: 600px;
+    }
+
+    .profilePhoto {
+        width: 130px;
+        height: 130px;
+    }
+    .skills {
+        column-gap: 40px;
+    }  
+}
+
+@media (max-width: 1000px) {
+    .resumePage {
+        width: 600px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .resumePage {
+        width: 500px;
+    }
+    .profilePhoto {
+        width: 80px;
+        height: 80px;
+        margin-right:15px ;
+    }
+    .summaryTitle {
+        font-size: 13px;
+        text-align: right;
+    }
+    
+.profilePart, .summaryPart, .skillPart, .workPart, .educationPart, .languagePart {
+    grid-template-columns: 1fr 4fr;
+    position: relative;
+  }
+  .rightSide .name {
+      font-size: 20px;
+  }
+  .contactList .icon {
+    font-size: 12px;
+}
+.contactList .text {
+    font-size: 12px;
+}
+.rightSide .profession {
+    font-size: 12px;
+    
+}
+
+.summaryDesc {
+    font-size: 12px;
+}
+.skills {
+    column-gap: 0px;
+}
+    
+}
+
